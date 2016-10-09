@@ -33,4 +33,4 @@ for i in range(commitNum):
         os.remove(path)
         print str(fileName)+fileType[typeNum]+' have been deleted!'
 print 'all changes have been committed!'
-raw_input('press any key to exit!')
+raw_input('press Enter to exit!')
