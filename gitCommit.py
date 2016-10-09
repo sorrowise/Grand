@@ -15,7 +15,7 @@ import numpy as np
 import subprocess
 import time
 
-workDir = 'C:/Users/Administrator/Desktop/sync/GitHub/Grand/'
+workDir = '../Grand/'
 os.chdir(workDir)
 commitNum = np.random.randint(3,21)
 fileType = ['.txt','.html','.md','.py']
