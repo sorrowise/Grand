@@ -29,10 +29,10 @@ def main(argv):
 		curdate = get_date_string(i, startdate)
 		num_commits = randint(1, 10)
 		for commit in range(0, num_commits):
-			subprocess.call("echo '" + curdate + str(randint(0, 1000000)) +"'realwork.txt\n"+" git add realwork.txt\n"+" GIT_AUTHOR_DATE='" + curdate + "' GIT_COMMITTER_DATE='" + curdate + "' git commit -m 'update'\n"+ "git push\n", shell=True)
+			subprocess.call("echo '" + curdate + str(randint(0, 1000000)) +"' > realwork.txt\n git add realwork.txt\n GIT_AUTHOR_DATE='" + curdate + "' GIT_COMMITTER_DATE='" + curdate + "' git commit -m 'update'\n git push\n", shell=True)
 			sleep(.5)
 		i += 1
-	subprocess.call("git rm realwork.txt\n"+" git commit -m 'delete'\n"+" git push\n", shell=True)
+	subprocess.call("git rm realwork.txt\n git commit -m 'delete'\n git push\n", shell=True)
 
 if __name__ == "__main__":
 	main(sys.argv[1:])
