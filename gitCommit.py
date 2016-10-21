@@ -16,7 +16,7 @@ import subprocess
 import time
 
 
-commitNum = np.random.randint(3,21)
+commitNum = np.random.randint(3,11)
 fileType = ['.txt','.html','.md','.py']
 print 'the program will make %s commits today!' %(commitNum)
 for i in range(commitNum):
