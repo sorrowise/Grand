@@ -14,9 +14,15 @@ import os
 import numpy as np
 import subprocess
 import time
+import sys
 
+if len(sys.argv) == 1:
+    commitNum = np.random.randint(3,11)
+elif len(sys.argv) == 2:
+    commitNum = int(sys.argv[1])
+else:
+    print "the number of optional argument is wrong, must be 0 or 1!"
 
-commitNum = np.random.randint(3,11)
 fileType = ['.txt','.html','.md','.py']
 print 'the program will make %s commits today!' %(commitNum)
 for i in range(commitNum):
