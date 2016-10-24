@@ -1,4 +1,3 @@
-import sys
+import pelican
 
-for i in range(len(sys.argv)):
-    print "hello!"
+print pelican.__version__
