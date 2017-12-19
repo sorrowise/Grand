@@ -4,7 +4,7 @@
 Script Name : gitCommit.py
 Author      : LURUI
 Created	    : 4 April 2016
-Version	    : 1.0
+Version	    : 1.1
 Description	: This simple script is to commit and push changes of my project to GitHub automatically.
 
 """
